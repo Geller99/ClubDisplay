@@ -3,8 +3,8 @@
 
 const getClubData = function(club) {  // create a reusable club generating function
 
-const btn = document.querySelector('.btn-country');
-const countriesContainer = document.querySelector('.clubs');
+const btn = document.querySelector('.btn-clubs');
+const clubsContainer = document.querySelector('.clubs');
 
 const request = new XMLHttpRequest();  // doing ajax in js old school 
 request.open('GET', `https://data.football-api.com/v3/teams/${club}?Authorization=cfnR6LWc4i4MDFLlPJrajoa465c4qjF594kpIy4b`);  
@@ -32,8 +32,8 @@ const html = `
 </article>
 `;
 
-countriesContainer.insertAdjacentHTML('beforeend', html);  // insert this into the page
-countriesContainer.style.opacity = 1;
+clubsContainer.insertAdjacentHTML('beforeend', html);  // insert this into the page
+clubsContainer.style.opacity = 1;
 
 });
 
