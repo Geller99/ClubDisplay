@@ -77,7 +77,11 @@ const getClubData = async (item) => {
   are finished to return its input
 */
 const getData = async () => {
-  return Promise.all(selectedClubs.map((item) => getClubData(item)));
+  return Promise.all(
+    selectedClubs.map((item) => {
+      return getClubData(item);
+    })
+  );
 };
 
 /*
@@ -87,5 +91,7 @@ const getData = async () => {
   to inject the html and display the clubs.
 */
 getData().then((data) => {
-  data.map((item) => displayClub(item));
+  data.map((item) => {
+    return displayClub(item);
+  });
 });
