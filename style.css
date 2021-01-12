@@ -81,7 +81,7 @@
     margin-bottom: 0.7rem;
   }
   
-  .country__region {
+  .club__region {
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
@@ -98,7 +98,7 @@
     font-size: 2.4rem;
   }
   
-  .btn-country {
+  .btn-club {
     border: none;
     font-size: 2rem;
     padding: 2rem 5rem;
